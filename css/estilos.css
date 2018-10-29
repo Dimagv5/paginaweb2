@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Pacifico');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+/*
+h1{
+    font-family: 'Pacifico', cursive;
+}*/
+
+/******************************Estilos base************************************/
+img{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+.container{
+    width: 100%;
+    margin: auto;
+}
+.container-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.column{
+    width: 100%;
+}
+/*********************Estilos header*******************************/
+.main-header{
+    width: 100%;
+}
+.logo{
+    font-size: 1.8em;
+    color: #7B1FA2;
+    font-family: 'Pacifico', cursive;
+    font-weight: 100;
+}
+.main-header_contactInfo_phone{
+    background: #7B1FA2;
+    color: white;
+    margin: 0 auto;
+    padding: 10px;
+}
+.main-header_cotactInfo_address{
+    margin: 0;
+    padding: 10px;
+}
+.main-header [class*="icon-"]:before{
+    position: relative;
+    top: 2px;
+    right: 5px;
+}
+.main-nav{
+    width: 100%;
+    position: relative;
+    padding: 10px;
+    z-index: 2000;
+}
+.icon-bars-menu{
+    display: block;
+    color: white;
+    font-size: 1.5em;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 45px;
+    cursor: pointer;
+}
+.social-icon{
+    display: flex;
+    justify-content: space-between;
+}
+.social-icon [class*="icon-"]{
+    color: black;
+/*    margin-left: 5px;*/
+    margin: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border-radius: 50%;
+}
+.social-icon-link{
+    text-decoration: none;
+}
+.menu{
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: rgba(0,0,0,0.8);
+    text-align: center;
+    height: 0;
+    overflow: hidden;
+/*    transition: .3s; */
+    transition: height .3s linear;
+}
+.menu_link{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 15px;
+}
+.menu_link:hover{
+    background-color: #7B1FA2;
+}
+.menu_link_select{
+        background-color: #7B1FA2;
+}
+.mostrar{
+    height: 196px;
+}
+/*******************Estilos del banner****************/
+.banner{
+    margin-top: -60px;
+    position: relative;
+}
+.banner:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 1000;
+/*    top: 0;*/
+}
+.banner_img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+.banner_content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1500;
+    width: 90%;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    transform: translateX(-50%) translateY(-50%);
+}
+/***********++*******Estilos principales*****************************/
+.group-color .container{
+    background-color: #7B1FA2;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+.main_title{
+ font-family: 'Pacifico', cursive;
+    font-weight: 100;
+    font-size: 1.8em;
+    margin: 15px 0;
+}
+.column-title{
+    font-size: 1.3em;
+}
+.main_about_description .column:nth-child(2){
+    padding: 10px;
+}
+.btn{
+    display: block;
+    text-decoration: none;
+    background: #7B1FA2;
+    width: 120px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 10px auto;
+}
+.group_title{
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    font-weight: 100;
+    padding: 20px;
+    font-size: 1.8em;
+}
+.today-special .column{
+    margin-bottom: 30px;
+    text-align: center;
+}
+.today-special_img{
+    max-width: 350px;
+    margin: auto;
+}
+.column-txt{
+    text-align: justify;
+}
+.today-special_title{
+    font-size: 1.3em;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+.today-special_price{
+    font-size: 1.5em;
+    color: #7B1FA2;
+    font-weight: bold;
+}
+/************Estilos del footer***************/
+.main-footer{
+    background-color: #222;
+    color: white;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: .8em;
+}
+.copy{
+    margin: auto;
+    padding-top: 15px;
+    text-align: center;
+}
+.main-footer [class*="icon-"]{
+    color: white;
+    text-decoration: none;
+    
+}
+.main-footer [class*="icon-"]:before{
+    position: relative;
+    top: 3px;
+    right: 5px;
+}
+/**************Estilos responsive************/
+@media screen and (min-width: 480px){
+    .column-50{
+        width: 49%;
+    }
+    .column-50-25{
+        width: 49%;
+    }
+    .column-33{
+        width: 31%;
+    }
+    .logo{
+        color:white;
+        padding: 10px;
+    }
+    .main-header_contactInfo{
+        text-align: right;
+    }
+    .main-header_contactInfo_phone{
+        background: none;
+        padding-top: 20px;
+        padding-bottom: 0;
+        margin: 0;
+    }
+    .main-header_contactInfo_address{
+        color: white;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        margin: 0;
+    }
+    .banner{
+        margin-top: -165px;
+        z-index: -2000;
+    }
+    .banner_img{
+        height: 600px;
+    }
+    .banner_content{
+        font-size: 2em;
+    }
+    .main{
+        padding-bottom: 15px;
+    }
+    .main-nav{
+        background-color: rgba(0,0,0,0.85);
+    }     .main_about_description .column:nth-child(2){
+        padding-left: 20px;
+        font-size: .9em
+    }
+    .main_about_description .btn{
+        margin: 0;
+    }
+    .today-special .column{
+        border: 5px solid #ddd;
+        padding: 5px;      
+    }
+    .today-special_img{
+        height: 200px;
+        object-fit: cover;
+    }
+    .main-footer .container-flex{
+        align-items: flex-start;
+    }
+
+}
+@media screen and (min-width: 768px){
+    .column-50-25{
+        width: 24.5%;
+    }
+    .main_title{
+        font-size: 2.2em;
+    }
+    .main_about_description{
+        margin-top: 30px;
+    }
+    .main_about_description .column:nth-child(2){
+        font-size: 1em;
+    }
+    .main_about_description .column-txt{
+        line-height: 30px;
+    }
+    .group_title{
+        font-size: 2.2em;
+    }
+    .today-special_title{
+        font-size: 1.2em;
+    }
+/*
+    .column-title{
+        font-size: 1em;
+    }
+*/
+}
+@media screen and (min-width: 1024px){
+    .container{
+        width: 90%;
+    }
+    .logo{
+        padding: 0;
+    }
+    .main-header_contactInfo_phone, .main-header_contactInfo_address{
+        padding-right: 0;
+    }
+    .main-nav{
+        padding: 0;
+    }
+    .icon-bars-menu{
+        display: none;
+    }
+    .menu{
+        position: static;
+        display: flex;
+        height: auto;
+        width: auto;
+    }
+    .menu_link{
+        padding: 20px;
+    }
+    .banner_img{
+        height: 700px;
+    }
+    .banner_content{
+        font-size: 2.5em;
+    }
+    .group-color .container{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 20px;
+    }
+    .main_title{
+        font-size: 2.3em;
+    }
+    .main_about_description .column:nth-child(2) .column-title{
+        font-size: 1.4em;
+    }
+     .main_about_description .column:nth-child(2) .column-txt{
+        margin: 25px 0;
+        line-height: 30px;
+    }
+    .today-special_title{
+        font-size: 1.4em;
+    }
+    .today-special_price{
+        font-size: 1.8em;
+    }
+    .main-footer{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+@media screen and (min-width: 1600px){
+    .container{
+        width: 1400px;
+    }
+    .banner_img{
+        height: 800px;
+    }
+    .main_about_description .column:nth-child(2) .column-txt{
+        line-height: 40px;
+        font-size: 1.05em;
+    }
+    .main_about_description .column:nth-child(1) img{
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+    }
+    .today-special_img{
+        height: 300px;
+    }
+}
