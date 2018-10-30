@@ -1,14 +1,16 @@
 /*********Estilos de la galería********/
 .gallery .container{
 	background-color: #444;
+	width: 95%;
+	margin: auto;
 	margin-bottom: 20px;
 }
 .gallery .container-flex{
 	justify-content: space-around;
 }
 .galeria img{
-	width: 230px;
-	height: 180px;
+	width: 170px;
+	height: 150px;
 	
 }
 .galeria{
@@ -41,15 +43,16 @@
 	font-size: 1.3em;
 	margin: 15px 0;
 }
-.mostrar{
-	width: 100%;
-	height: 80%;
-}
 .container-flex-galery{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
+.mostrar{
+	width: 100%;
+	height: 40%;
+}
+
 .mostrar a{
 	color: white;
 	font-size: 40px;
@@ -63,7 +66,7 @@
 /*	flex-shrink: 2;*/
 }
 .mostrar img{
-	width: 600px;
+	max-width: 800px;
 	height: 100%;
 	/*max-width: 100%;*/
 	border: 7px solid #fff;
@@ -82,4 +85,23 @@
 	padding: 5px;
 	line-height: 15px;
 	font-weight: bold;
+}
+@media screen and (min-width: 480px){
+	.galeria img{
+	width: 230px;
+	height: 180px;
+}
+	.mostrar{
+	height: 50%;
+}
+}
+@media screen and (min-width: 768px){
+	.mostrar{
+	height: 60%;
+}
+}
+@media screen and (min-width: 1024px){
+	.mostrar{
+	height: 70%;
+}
 }
