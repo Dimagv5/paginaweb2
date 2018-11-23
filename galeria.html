@@ -32,7 +32,7 @@
             <ul class="menu" id="menu">
                 <li class="menu_item"><a href="/" class="menu_link">Inicio</a></li>
                 <li class="menu_item"><a href="nosotros.html" class="menu_link">Nosotros</a></li>
-                <li class="menu_item menu_link_select"><a href="galeria.html" class="menu_link">Galería</a></li>
+                <li class="menu_item"><a href="galeria.html" class="menu_link menu_link_select">Galería</a></li>
                 <li class="menu_item"><a href="contacto.html" class="menu_link">Contacto</a></li>
             </ul>
             <div class="social-icon">
@@ -58,124 +58,34 @@
             </div>
         </section>
         
-        <section class="group gallery" id="gallery">
-            <h2 class="group_title">Galería</h2>
-            <div class="container">
-                <ul class="galeria container-flex">
-                	<li>
-                		<a href="#img1"><img src="img/galeria1.jpg" alt=""></a>
-                	</li>
-                	<li>
-                		<a href="#img2"><img src="img/galeria2.jpg" alt=""></a>
-                	</li>
-                	<li>
-                		<a href="#img3"><img src="img/galeria3.jpg" alt=""></a>
-                	</li>
-                	<li>
-                		<a href="#img4"><img src="img/galeria4.jpg" alt=""></a>
-                	</li>
-                	<li>
-                		<a href="#img5"><img src="img/galeria5.jpg" alt=""></a>
-                	</li>
-                	<li>
-                		<a href="#img6"><img src="img/galeria6.jpg" alt=""></a>
-                	</li>
-                	<li>
-                		<a href="#img7"><img src="img/galeria7.jpg" alt=""></a>
-                	</li>
-                	<li>
-                		<a href="#img8"><img src="img/galeria8.jpg" alt=""></a>
-                	</li>
-                	<li>
-                		<a href="#img9"><img src="img/galeria9.jpg" alt=""></a>
-                	</li>	
-                </ul>   
-            </div>
+        <section class="group gallery">
+        	<h2 class="group_title">Nuestra Galería</h2>
+        	<div class="container container-flex">
+        			<div class="column column-50-25">
+        				<img src="img/gallery/galeria1.jpg" alt="" class="gallery-img gallery-img-big">
+        				<img src="img/gallery/galeria2.jpg" alt="" class="gallery-img gallery-img-small">
+        			</div>
+        			<div class="column column-50-25">
+        				<img src="img/gallery/galeria3.jpg" alt="" class="gallery-img gallery-img-small">
+        				<img src="img/gallery/galeria4.jpg" alt="" class="gallery-img gallery-img-big">
+        			</div>
+        			<div class="column column-50-25">
+        				<img src="img/gallery/galeria5.jpg" alt="" class="gallery-img gallery-img-big">
+        				<img src="img/gallery/galeria6.jpg" alt="" class="gallery-img gallery-img-small">
+        			</div>
+        			<div class="column column-50-25">
+        				<img src="img/gallery/galeria7.jpg" alt="" class="gallery-img gallery-img-small">
+        				<img src="img/gallery/galeria8.jpg" alt="" class="gallery-img gallery-img-big">
+        			</div>
+        	</div>
+        </section>
+        <section class="modal" id="modal">
+        	<div class="modal-content">
+        			<img src="" alt="" class="modal-img" id="modal-img">
+        	</div>
+        	<div class="modal-button" id="modal-button">X</div>
         </section>
         
-        <section>
-        	<div class="modal" id="img1">
-        		<h3>Plato 1</h3>
-        		<div class="mostrar container-flex-galery">
-        			<a href="#img9">&#60;</a>
-					<a href="#img2"><img src="img/galeria1.jpg" alt=""></a>
-					<a href="#img2">></a>
-        		</div>
-        		<a class="cerrar" href="#gallery">x</a>
-        	</div> 
-        	<div class="modal" id="img2">
-        		<h3>Plato 2</h3>
-        		<div class="mostrar container-flex-galery">
-        			<a href="#img1">&#60;</a>
-					<a href="#img3"><img src="img/galeria2.jpg" alt=""></a>
-					<a href="#img3">></a>
-        		</div>
-        		<a class="cerrar" href="#gallery">x</a>
-        	</div>	
-        	<div class="modal" id="img3">
-        		<h3>Plato 3</h3>
-        		<div class="mostrar container-flex-galery">
-        			<a href="#img2">&#60;</a>
-					<a href="#img4"><img src="img/galeria3.jpg" alt=""></a>
-					<a href="#img4">></a>
-        		</div>
-        		<a class="cerrar" href="#gallery">x</a>
-        	</div>
-        	<div class="modal" id="img4">
-        		<h3>Plato 4</h3>
-        		<div class="mostrar container-flex-galery">
-        			<a href="#img3">&#60;</a>
-					<a href="#img5"><img src="img/galeria4.jpg" alt=""></a>
-					<a href="#img5">></a>
-        		</div>
-        		<a class="cerrar" href="#gallery">x</a>
-        	</div>
-        	<div class="modal" id="img5">
-        		<h3>Plato 5</h3>
-        		<div class="mostrar container-flex-galery">
-        			<a href="#img4">&#60;</a>
-					<a href="#img6"><img src="img/galeria5.jpg" alt=""></a>
-					<a href="#img6">></a>
-        		</div>
-        		<a class="cerrar" href="#gallery">x</a>
-        	</div>
-        	<div class="modal" id="img6">
-        		<h3>Plato 6</h3>
-        		<div class="mostrar container-flex-galery">
-        			<a href="#img5">&#60;</a>
-					<a href="#img7"><img src="img/galeria6.jpg" alt=""></a>
-					<a href="#img7">></a>
-        		</div>
-        		<a class="cerrar" href="#gallery">x</a>
-        	</div>
-        	<div class="modal" id="img7">
-        		<h3>Plato 7</h3>
-        		<div class="mostrar container-flex-galery">
-        			<a href="#img6">&#60;</a>
-					<a href="#img8"><img src="img/galeria7.jpg" alt=""></a>
-					<a href="#img8">></a>
-        		</div>
-        		<a class="cerrar" href="#gallery">x</a>
-        	</div>
-        	<div class="modal" id="img8">
-        		<h3>Plato 8</h3>
-        		<div class="mostrar container-flex-galery">
-        			<a href="#img7">&#60;</a>
-					<a href="#img9"><img src="img/galeria8.jpg" alt=""></a>
-					<a href="#img9">></a>
-        		</div>
-        		<a class="cerrar" href="#gallery">x</a>
-        	</div>
-        	<div class="modal" id="img9">
-        		<h3>Plato 9</h3>
-        		<div class="mostrar container-flex-galery">
-        			<a href="#img8">&#60;</a>
-					<a href="#img1"><img src="img/galeria9.jpg" alt=""></a>
-					<a href="#img1">></a>
-        		</div>
-        		<a class="cerrar" href="#gallery">x</a>
-        	</div>
-        </section>
     </main>
     
     <footer class="main-footer">
@@ -201,5 +111,6 @@
     </footer> 
  
  <script src="js/menu.js"></script>
+ <script src="js/modal.js"></script>
 </body>
 </html>
