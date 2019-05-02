@@ -1,5 +1,19 @@
+/* Fuentes
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Pacifico');
-
+*/
+@font-face{
+    font-family: 'Pacifico';
+    src: url('../fonts/Pacifico-Regular.ttf');
+}
+@font-face{
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.ttf');
+}
+@font-face{
+    font-family: 'Montserrat';
+    font-weight: bold;
+    src: url('../fonts/Montserrat-Bold.ttf');
+}
 *{
     box-sizing: border-box;
 }
@@ -50,8 +64,8 @@ h1, h2, h3, h4, h5, h6{
     margin: 0 auto;
     padding: 10px;
 }
-.main-header_cotactInfo_address{
-    margin: 0;
+.main-header_contactInfo_address{
+    margin: 0 auto;
     padding: 10px;
 }
 .main-header [class*="icon-"]:before{
@@ -167,7 +181,7 @@ h1, h2, h3, h4, h5, h6{
     text-align: center;
 }
 .main_title{
- font-family: 'Pacifico', cursive;
+    font-family: 'Pacifico', cursive;
     font-weight: 100;
     font-size: 1.8em;
     margin: 15px 0;
@@ -272,7 +286,7 @@ h1, h2, h3, h4, h5, h6{
         margin: 0;
     }
     .banner{
-        margin-top: -165px;
+        margin-top: -185px;
         z-index: -2000;
     }
     .banner_img{

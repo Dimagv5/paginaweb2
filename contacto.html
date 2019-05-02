@@ -6,8 +6,11 @@
     <title>Contacto | Tu Restaurante</title>
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/contacto.css">
-    <link href="https://file.myfontastic.com/zVtN44UsFFqQUvyeoQfaYi/icons.css" rel="stylesheet">
-<!--    <link href="https://fonts.googleapis.com/css?family=Montserrat|Pacifico" rel="stylesheet">-->
+    <!-- Fuentes de íconos -->
+    <!-- <link href="https://file.myfontastic.com/zVtN44UsFFqQUvyeoQfaYi/icons.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <!-- Fuentes -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat|Pacifico" rel="stylesheet"> -->
 </head>
 <body>
     <header class="main-header">
@@ -30,10 +33,10 @@
         <div class="container container-flex">
             <span class="icon-bars-menu" id="btnmenu"></span>
             <ul class="menu" id="menu">
-                <li class="menu_item"><a href="/" class="menu_link">Inicio</a></li>
+                <li class="menu_item"><a href="/paginaweb2-master" class="menu_link">Inicio</a></li>
                 <li class="menu_item"><a href="nosotros.html" class="menu_link">Nosotros</a></li>
                 <li class="menu_item"><a href="galeria.html" class="menu_link">Galería</a></li>
-                <li class="menu_item"><a href="contacto.html" class="menu_link menu_link_select">Contacto</a></li>
+                <li class="menu_item"><a href="contacto.html" class="menu_link menu_link_select" class="menu_link">Contacto</a></li>
             </ul>
             <div class="social-icon">
                 <a href="" class="social-icon-link"><span class="icon-facebook"></span></a>
@@ -46,37 +49,51 @@
     <section class="banner">
         <img src="img/banner-contact.jpg" alt="" class="banner_img">
         <div class="banner_content">
-            Siempre listos para atenderte
+            Déjanos un mensaje
         </div>
     </section>
     
     <main class="main">
-        <section class="group group-color">
+        <!-- <section class="group group-color">
             <div class="container">
-                <h2 class="main_title">Comunícate con nosotros</h2>
+                <h2 class="main_title">Comunícate con Nosotros</h2>
                 <p class="main_txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate perferendis praesentium, accusamus, cum, sint labore nemo facilis blanditiis unde voluptatum eum ut voluptas nulla numquam! Facere ad tempore, quidem laboriosam.</p>
             </div>
-        </section>
+        </section> -->
         
         <section class="group contact">
-            <h2 class="group_title">Contacto</h2>
-            <div class="container">
-               <div class="contact-info">
-               		<p class="contact-txt">Teléfono: 999-999-999</p>
-               		<p class="contact-txt">Dirección: Urdesa Central</p>
-               		<p class="contact-txt">Guayaquil - Ecuador</p>
-               </div>
-                <form action="">
-					<h3 class="contact-title">ESCRÍBENOS</h3>
-					<input type="text" name="nombre" placeholder="Nombre"/>
-					<input type="email" name="correo" placeholder="Correo"/>
-					<input type="number" name="telefono" placeholder="Teléfono"/>
-					<textarea name="mensaje" placeholder="Escriba aquí su mensaje"></textarea>
-					<input type="button" id="boton" value="Enviar"/>
-				</form>
-                
+            <h2 class="group_title">Contáctenos</h2>
+            <div class="container container-flex">
+                <div class="contact-information column column-50">
+                    <h3 class="column-title">Información de contacto</h3>
+                    <p class="column-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.</p>
+                    <p class="column-txt"><span class="icon-phone"></span>Teléfono 1: 999-999-999</p>
+                    <p class="column-txt"><span class="icon-phone"></span>Teléfono 2: 888-888-888</p>
+                    <p class="column-txt"><span class="icon-location"></span>Urdesa Central, Guayaquil - Ecuador</p>
+                    <p class="column-txt"><span class="icon-mail"></span>info@turestaurante.com</p>
+                    <div class="social-icon">
+                        <a href="" class="social-icon-link"><span class="icon-facebook"></span></a>
+                        <a href="" class="social-icon-link"><span class="icon-twitter"></span></a>
+                        <a href="" class="social-icon-link"><span class="icon-mail"></span></a>
+                    </div>
+                </div>
+                <form action="enviar-correo.php" method="POST" class="formulario column column-50">
+                    <label for="" class="formulario-label">Nombre:</label>
+                    <input type="text" name="nombre" class="formulario-input_txt">
+                    <label for="" class="formulario-label">Correo:</label>
+                    <input type="email" name="correo" class="formulario-input_txt">
+                    <label for="" class="formulario-label">Teléfono:</label>
+                    <input type="text" name="telefono" class="formulario-input_txt">
+                    <label for="" class="formulario-label">Mensaje:</label>
+                    <textarea name="mensaje" class="formulario-textarea" cols="30" rows="10"></textarea>
+                    <input type="submit" class="btn formulario-btn" value="Enviar">
+                </form>
             </div>
-        </section>
+        </section>      
+        
     </main>
     
     <footer class="main-footer">
